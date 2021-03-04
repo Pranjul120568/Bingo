@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OTPActivity">
+    <TextView
+        android:layout_marginTop="23dp"
+        android:id="@+id/tvverify"
+        android:text="@string/verify_phone_number"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#75e900"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/messagesenttv"
+        android:layout_marginTop="15dp"
+        android:text="@string/waiting_for_sms_to_send"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/setcodeet"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:hint="- - - - - -"
+        android:inputType="phone"
+        android:letterSpacing="0.8"
+        android:maxLength="6"
+        android:gravity="center"
+        android:textColorHint="#A9A9A9"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/secondsremaintv"
+        android:text="Enter the OTP"
+        android:textColor="#A9A9A9"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/verifyOtp"
+        android:text="Enter OTP"
+        android:textColor="#A9A9A9"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ConfirmOtpbtn"
+        android:backgroundTint="#03DAC5"
+        android:enabled="true"
+        android:layout_margin="40dp"
+        android:text="Confirm Otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ResendOtp"
+        android:backgroundTint="#03DAC5"
+        android:enabled="false"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Resend Otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

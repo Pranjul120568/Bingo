@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bingo</string>
+    <string name="waiting_for_sms_to_send">Waiting for SMS to send \n %s Wrong Number?</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="seconds_remaining">Seconds Remaining: %d</string>
+    <string name="verify_number">Verify %s</string>
+</resources>

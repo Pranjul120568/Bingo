@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.UserSetupActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileimage"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/common_google_signin_btn_icon_dark"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+    <EditText
+        android:id="@+id/nameedt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:hint="Enter your name"
+        android:textColor="@color/black"
+        android:textColorHint="#A9A9A9" />
+
+<Button
+    android:text="SAVE"
+    android:layout_gravity="center"
+    android:backgroundTint="#A9A9A9"
+    android:id="@+id/saveBtn"
+    android:enabled="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
